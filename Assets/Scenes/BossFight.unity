@@ -1070,6 +1070,7 @@ MonoBehaviour:
   - rid: 4645555404788990245
   - rid: 4645555406466974389
   - rid: 4645555406466974390
+  - rid: 4645555489608040716
   m_OriginalGraph: {fileID: 0}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -1108,6 +1109,14 @@ MonoBehaviour:
           m_Value1: 18105227912082433855
         Name: FallingRock
         m_Value: {fileID: 7935544742682990417, guid: c1025daebf7cb5147a35828cf5c99a00, type: 3}
+    - rid: 4645555489608040716
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 17315261573947281692
+          m_Value1: 3304202832614121429
+        Name: Player
+        m_Value: {fileID: 1969089124}
 --- !u!50 &1477715773
 Rigidbody2D:
   serializedVersion: 5
@@ -1120,10 +1129,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1134,7 +1143,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1477715776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1904546467
 Transform:
   m_ObjectHideFlags: 0
@@ -1786,6 +1795,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39a3a55a62d49004d979995918e1d952, type: 3}
+--- !u!1 &1969089124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 339477802832129857, guid: b6aba049213e51e4fb6c1549e4b994df, type: 3}
+  m_PrefabInstance: {fileID: 1673059241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2092261348
 GameObject:
   m_ObjectHideFlags: 0

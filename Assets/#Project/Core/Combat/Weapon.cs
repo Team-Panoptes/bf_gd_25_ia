@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Core.Combat
 {
-    [Serializable]
-    public class Weapon
-    {
+    
+    [CreateAssetMenu(fileName = "Weapon", menuName = "Weapon", order = 0)]
+    public class Weapon : ScriptableObject {
         public Transform weaponTransform;
         public AbstractProjectile projectilePrefab;
         public float horizontalForce = 5.0f;
